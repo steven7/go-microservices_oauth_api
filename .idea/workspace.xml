@@ -19,11 +19,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,5 +99,9 @@
     <state width="1152" height="308" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1600649996001" />
     <state width="1588" height="275" key="GridCell.Tab.0.right/1920.497.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600465894782" />
     <state width="1728" height="308" key="GridCell.Tab.0.right/2560.23.1440.832/0.23.2560.1417@0.23.2560.1417" timestamp="1601007081667" />
+    <state x="325" y="79" key="SettingsEditor" timestamp="1607682980562">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="325" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1607682980562" />
   </component>
 </project>
