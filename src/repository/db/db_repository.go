@@ -2,9 +2,10 @@ package db
 
 import (
 	"github.com/gocql/gocql"
-	"go-microservces_users_api/utils/errors"
-	"go-microservices_oath_api/src/client/cassandra"
-	"go-microservices_oath_api/src/domain/access_token"
+	"github.com/steven7/bookstore_utils-go/rest_errors"
+	"github.com/steven7/go-microservces_users_api/utils/errors"
+	"github.com/steven7/go-microservices_oath_api/src/client/cassandra"
+	"github.com/steven7/go-microservices_oath_api/src/domain/access_token"
 )
 
 const (
@@ -18,9 +19,9 @@ func NewRepository() DbRepository {
 }
 
 type DbRepository interface {
-	GetById(string) (*access_token.AccessToken, *errors.RestErr)
-	Create(access_token.AccessToken) *errors.RestErr
-	UpdateExpirationTime(access_token.AccessToken) *errors.RestErr
+	GetById(string) (*access_token.AccessToken, *rest_errors.RestErr)
+	Create(access_token.AccessToken) *rest_errors.RestErr
+	UpdateExpirationTime(access_token.AccessToken) *rest_errors.RestErr
 }
 
 type dbRepository struct {

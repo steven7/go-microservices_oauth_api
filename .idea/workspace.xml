@@ -8,6 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1hh729Q9I5kQQkcdpBROeoa9TDO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,7 +20,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -51,7 +55,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="643" y="281" key="#Go_Modules" timestamp="1607681401368">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="643" y="281" key="#Go_Modules/0.23.1440.834@0.23.1440.834" timestamp="1607681401368" />
     <state x="318" y="83" width="1071" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600541898710">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
@@ -84,5 +95,16 @@
     <state width="1152" height="308" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1600649996001" />
     <state width="1588" height="275" key="GridCell.Tab.0.right/1920.497.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600465894782" />
     <state width="1728" height="308" key="GridCell.Tab.0.right/2560.23.1440.832/0.23.2560.1417@0.23.2560.1417" timestamp="1601007081667" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/repository/db/db_repository.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

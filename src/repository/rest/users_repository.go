@@ -3,8 +3,9 @@ package rest
 import (
 	"encoding/json"
 	"fmt"
-	"go-microservces_users_api/utils/errors"
-	"go-microservices_oath_api/src/domain/users"
+	"github.com/steven7/bookstore_utils-go/rest_errors"
+	"github.com/steven7/go-microservces_users_api/utils/errors"
+	"github.com/steven7/go-microservices_oath_api/src/domain/users"
 	"github.com/golang-restclient/rest"
 	"time"
 
@@ -19,7 +20,7 @@ var (
 )
 
 type RestUsersRepository interface {
-	LoginUser(string, string) (*users.User, *errors.RestErr)
+	LoginUser(string, string) (*users.User, *rest_errors.RestErr)
 }
 
 type usersRepository struct {}

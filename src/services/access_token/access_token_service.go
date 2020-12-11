@@ -2,11 +2,11 @@ package access_token
 
 import (
 	// "github.com/federicoleon/bookstore_utils-go/rest_errors"
-	"go-microservces_users_api/utils/errors"
+	"github.com/steven7/go-microservces_users_api/utils/errors"
 	"strings"
-	"go-microservices_oath_api/src/repository/db"
-	"go-microservices_oath_api/src/repository/rest"
-	"go-microservices_oath_api/src/domain/access_token"
+	"github.com/steven7/go-microservices_oath_api/src/repository/db"
+	"github.com/steven7/go-microservices_oath_api/src/repository/rest"
+	"github.com/steven7/go-microservices_oath_api/src/domain/access_token"
 )
 
 type Service interface {

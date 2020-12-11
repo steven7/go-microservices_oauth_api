@@ -1,22 +1,22 @@
 package access_token
 
 import (
-	"go-microservces_users_api/utils/errors"
+	"github.com/steven7/bookstore_utils-go/rest_errors"
 	"go-microservices_oath_api/src/repository/db"
 	"go-microservices_oath_api/src/repository/rest"
 	"strings"
 )
 
 type Repository interface {
-	GetById(string) (*AccessToken, *errors.RestErr)
-	Create(AccessToken) *errors.RestErr
-	UpdateExpirationTime(AccessToken) *errors.RestErr
+	GetById(string) (*AccessToken, *rest_errors.RestErr)
+	Create(AccessToken) *rest_errors.RestErr
+	UpdateExpirationTime(AccessToken) *rest_errors.RestErr
 }
 
 type Service interface {
-	GetById(string) (*AccessToken, *errors.RestErr)
-	Create(AccessToken) *errors.RestErr
-	UpdateExpirationTime(AccessToken) *errors.RestErr
+	GetById(string) (*AccessToken, *rest_errors.RestErr)
+	Create(AccessToken) *rest_errors.RestErr
+	UpdateExpirationTime(AccessToken) *rest_errors.RestErr
 }
 
 type service struct {
@@ -38,10 +38,10 @@ func NewService(usersRepo rest.RestUsersRepository, dbRepo db.DbRepository) Serv
 //	}
 //}
 
-func (s *service) GetById(accessTokenId string) (*AccessToken, *errors.RestErr) {
+func (s *service) GetById(accessTokenId string) (*AccessToken, *rest_errors.RestErr) {
 	accessTokenId = strings.TrimSpace(accessTokenId)
 	if len(accessTokenId) == 0 {
-		return nil, errors.NewBadRequestError("invalid access token")
+		return nil, rest_errors.NewBadRequestError("invalid access token")
 	}
 	accessToken, err := s.dbRepo.GetById(accessTokenId)
 	if err != nil {
@@ -50,14 +50,14 @@ func (s *service) GetById(accessTokenId string) (*AccessToken, *errors.RestErr) 
 	return accessToken, nil
 }
 
-func (s *service) Create(at AccessToken) *errors.RestErr {
+func (s *service) Create(at AccessToken) *rest_errors.RestErr {
 	if err := at.Validate(); err != nil {
 		return err
 	}
 	return s.dbRepo.Create(at)
 }
 
-func (s *service) UpdateExpirationTime(at AccessToken) *errors.RestErr {
+func (s *service) UpdateExpirationTime(at AccessToken) *rest_errors.RestErr {
 	if err := at.Validate(); err != nil {
 		return err
 	}

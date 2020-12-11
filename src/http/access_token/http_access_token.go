@@ -2,7 +2,7 @@ package http
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-microservces_users_api/utils/errors"
+	"github.com/steven7/bookstore_utils-go/rest_errors"
 	"go-microservices_oath_api/src/domain/access_token"
 	"net/http"
 )
@@ -34,7 +34,7 @@ func (handler *accessTokenHandler) GetById(c *gin.Context) {
 func (handler *accessTokenHandler) Create(c *gin.Context) {
 	var at access_token.AccessToken
 	if err := c.BindJSON(&at); err != nil {
-		restErr := errors.NewBadRequestError("invalid json body")
+		restErr := rest_errors.NewBadRequestError("invalid json body")
 		c.JSON(restErr.Status, restErr)
 		return
 	}
