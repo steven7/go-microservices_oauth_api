@@ -1,12 +1,11 @@
 package rest
 
 import (
+	"github.com/mercadolibre/golang-restclient/rest"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"os"
 	"testing"
-
-	"github.com/mercadolibre/golang-restclient"
 )
 
 func TestMain(m *testing.M) {

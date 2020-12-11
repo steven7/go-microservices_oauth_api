@@ -3,14 +3,10 @@ package rest
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/mercadolibre/golang-restclient/rest"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
-	"github.com/steven7/go-microservces_users_api/utils/errors"
 	"github.com/steven7/go-microservices_oauth_api/src/domain/users"
-	"github.com/mercadolibre/golang-restclient"
-	//"github.com/golang-restclient/rest"
 	"time"
-
-	//"github.com/merc
 )
 
 var (
@@ -46,7 +42,7 @@ func (r *usersRepository) LoginUser(email string, password string) (*users.User,
 
 	if response.StatusCode > 299 {
 		fmt.Println(response.String())
-		var restErr errors.RestErr
+		var restErr rest_errors.RestErr
 		err := json.Unmarshal(response.Bytes(), &restErr)
 		if err != nil {
 			return nil, rest_errors.NewInternalServerError("invalid error interface when trying to login user")
