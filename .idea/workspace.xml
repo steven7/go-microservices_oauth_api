@@ -96,15 +96,4 @@
     <state width="1588" height="275" key="GridCell.Tab.0.right/1920.497.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600465894782" />
     <state width="1728" height="308" key="GridCell.Tab.0.right/2560.23.1440.832/0.23.2560.1417@0.23.2560.1417" timestamp="1601007081667" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/repository/db/db_repository.go</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
