@@ -4,8 +4,8 @@ import (
 	"github.com/gocql/gocql"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
 	"github.com/steven7/go-microservces_users_api/utils/errors"
-	"github.com/steven7/go-microservices_oath_api/src/client/cassandra"
-	"github.com/steven7/go-microservices_oath_api/src/domain/access_token"
+	"github.com/steven7/go-microservices_oauth_api/src/client/cassandra"
+	"github.com/steven7/go-microservices_oauth_api/src/domain/access_token"
 )
 
 const (

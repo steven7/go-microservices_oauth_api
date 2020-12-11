@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
 	"github.com/steven7/go-microservces_users_api/utils/errors"
-	"github.com/steven7/go-microservices_oath_api/src/domain/users"
+	"github.com/steven7/go-microservices_oauth_api/src/domain/users"
 	"github.com/golang-restclient/rest"
 	"time"
 
