@@ -3,7 +3,7 @@ package http
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
-	"go-microservices_oath_api/src/domain/access_token"
+	"github.com/steven7/go-microservices_oauth_api/src/domain/access_token"
 	"net/http"
 )
 

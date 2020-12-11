@@ -2,11 +2,11 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-microservices_oath_api/src/client/cassandra"
-	"go-microservices_oath_api/src/domain/access_token"
-	http "go-microservices_oath_api/src/http/access_token"
-	"go-microservices_oath_api/src/repository/db"
-	"go-microservices_oath_api/src/repository/rest"
+	"github.com/steven7/go-microservices_oauth_api/src/client/cassandra"
+	"github.com/steven7/go-microservices_oauth_api/src/domain/access_token"
+	http "github.com/steven7/go-microservices_oauth_api/src/http/access_token"
+	"github.com/steven7/go-microservices_oauth_api/src/repository/db"
+	"github.com/steven7/go-microservices_oauth_api/src/repository/rest"
 )
 
 var (

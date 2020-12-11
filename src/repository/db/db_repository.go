@@ -3,7 +3,6 @@ package db
 import (
 	"github.com/gocql/gocql"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
-	"github.com/steven7/go-microservces_users_api/utils/errors"
 	"github.com/steven7/go-microservices_oauth_api/src/client/cassandra"
 	"github.com/steven7/go-microservices_oauth_api/src/domain/access_token"
 )
@@ -37,9 +36,9 @@ func (dbr *dbRepository) GetById(id string) (*access_token.AccessToken, *rest_er
 		&result.Expires,
 	); err != nil {
 		if err == gocql.ErrNotFound {
-			return nil, errors.NewNotFoundError("no access token found with given id")
+			return nil, rest_errors.NewNotFoundError("no access token found with given id")
 		}
-		return nil, errors.NewInternalServerError(err.Error())
+		return nil, rest_errors.NewInternalServerError(err.Error())
 	}
 	return &result, nil
 }
@@ -49,7 +48,7 @@ func (dbr *dbRepository) Create(token access_token.AccessToken) *rest_errors.Res
 		token.Expires,
 		token.AccessToken,
 	).Exec(); err != nil {
-		return errors.NewInternalServerError(err.Error())
+		return rest_errors.NewInternalServerError(err.Error())
 	}
 	return nil
 }
@@ -59,7 +58,7 @@ func (dbr *dbRepository) UpdateExpirationTime(at access_token.AccessToken) *rest
 		at.Expires,
 		at.AccessToken,
 	).Exec(); err != nil {
-		return errors.NewInternalServerError(err.Error())
+		return rest_errors.NewInternalServerError(err.Error())
 	}
 	return nil
 }

@@ -2,8 +2,8 @@ package access_token
 
 import (
 	"github.com/steven7/bookstore_utils-go/rest_errors"
-	"go-microservices_oath_api/src/repository/db"
-	"go-microservices_oath_api/src/repository/rest"
+	"github.com/steven7/go-microservices_oauth_api/src/repository/db"
+	"github.com/steven7/go-microservices_oauth_api/src/repository/rest"
 	"strings"
 )
 

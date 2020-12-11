@@ -75,6 +75,10 @@
       <screen x="0" y="23" width="1920" height="1012" />
     </state>
     <state x="836" y="338" key="#com.intellij.fileTypes.FileTypeChooser/1920.497.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600452054819" />
+    <state x="714" y="309" key="EnvironmentVariablesDialog" timestamp="1607683898027">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="714" y="309" key="EnvironmentVariablesDialog/0.23.1440.834@0.23.1440.834" timestamp="1607683898027" />
     <state width="1728" height="308" key="GridCell.Tab.0.bottom" timestamp="1601007081668">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -99,9 +103,9 @@
     <state width="1152" height="308" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1600649996001" />
     <state width="1588" height="275" key="GridCell.Tab.0.right/1920.497.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600465894782" />
     <state width="1728" height="308" key="GridCell.Tab.0.right/2560.23.1440.832/0.23.2560.1417@0.23.2560.1417" timestamp="1601007081667" />
-    <state x="325" y="79" key="SettingsEditor" timestamp="1607682980562">
+    <state x="325" y="79" key="SettingsEditor" timestamp="1607683899443">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="325" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1607682980562" />
+    <state x="325" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1607683899443" />
   </component>
 </project>
