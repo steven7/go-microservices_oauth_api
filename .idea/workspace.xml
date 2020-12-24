@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8539f3ed-e385-4ad3-b8fd-b09be14fa006" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/access_token/access_token.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/access_token/access_token.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/application.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/cassandra/cassandra_db.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/access_token/access_token.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/access_token/access_token_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/access_token/service.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/users/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/access_token/http_access_token.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/db/db_repository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/rest/users_repository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/rest/users_repository_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/access_token/access_token_service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/access_token/http_access_token.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/access_token/http_access_token.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/db/db_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/db/db_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/rest/users_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/rest/users_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/access_token/access_token_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/access_token/access_token_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/crypto_utils/crypto_utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/crypto_utils/crypto_utils.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,21 +76,25 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="211" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.833@0.23.1440.833" timestamp="1608824338555" />
-    <state width="1035" height="216" key="GridCell.Tab.0.bottom" timestamp="1608824444152">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state width="1035" height="216" key="GridCell.Tab.0.bottom" timestamp="1608827712601">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state width="1035" height="216" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1608827712601" />
     <state width="1035" height="216" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1608824444152" />
-    <state width="1035" height="216" key="GridCell.Tab.0.center" timestamp="1608824444151">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state width="1035" height="216" key="GridCell.Tab.0.center" timestamp="1608827712600">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state width="1035" height="216" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1608827712600" />
     <state width="1035" height="216" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1608824444151" />
-    <state width="1035" height="216" key="GridCell.Tab.0.left" timestamp="1608824444150">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state width="1035" height="216" key="GridCell.Tab.0.left" timestamp="1608827712600">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state width="1035" height="216" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1608827712600" />
     <state width="1035" height="216" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1608824444150" />
-    <state width="1035" height="216" key="GridCell.Tab.0.right" timestamp="1608824444151">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state width="1035" height="216" key="GridCell.Tab.0.right" timestamp="1608827712601">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state width="1035" height="216" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1608827712601" />
     <state width="1035" height="216" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1608824444151" />
   </component>
 </project>

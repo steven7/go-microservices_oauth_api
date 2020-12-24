@@ -3,7 +3,7 @@ package access_token
 import (
 	"fmt"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
-	"github.com/steven7/go-microservces_users_api/utils/crypto_utils"
+	"github.com/steven7/go-microservices_oauth_api/utils/crypto_utils"
 	"strings"
 	"time"
 )
@@ -27,7 +27,7 @@ type AccessTokenRequest struct {
 	ClientSecret string `json:"client_secret"`
 }
 
-func (at *AccessTokenRequest) Validate() *rest_errors.RestErr {
+func (at *AccessTokenRequest) Validate() rest_errors.RestErr {
 	switch at.GrantType {
 	case grantTypePassword:
 		break
@@ -50,7 +50,7 @@ type AccessToken struct {
 	Expires     int64  `json:"expires"`
 }
 
-func (at AccessToken) Validate() *rest_errors.RestErr {
+func (at AccessToken) Validate() rest_errors.RestErr {
 	at.AccessToken = strings.TrimSpace(at.AccessToken)
 	if len(at.AccessToken) == 0 {
 		return rest_errors.NewBadRequestError("invalid access token id")
